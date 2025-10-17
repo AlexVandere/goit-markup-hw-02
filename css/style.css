@@ -1,48 +1,55 @@
 body{
     color: #2E2F42;
-    font-Family: Roboto;
-    font-Weight: Regular;
-    Size: 16px ;
+    font-Family:roboto,sans-serif;
     Line-Height:24px;
- 
 }
+
 p{
     color:#434455;
 }
 a{  
+    font-weight: 500;
     color:currentColor;
     letter-spacing: 4%;
     text-decoration: none;
 }
-button{
+a:hover {
+    color: #404bbf;
+}
+h1 {
+    color: #FFFFFF;
+}
+h3{
+    font-size: 20px;
+    font-weight:500;
+}
+.order_btn{
+    border: none;
     cursor: pointer;
     font-size: inherit;
     font-family: inherit; 
     font-weight: 500;
-    line-height: 32px;
-    letter-spacing: 4%;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     background-color:#4D5AE5;
     color:#FFFFFF;
 
 }
-button:hover{
+.order_btn:hover{
     background-color:#404bbf;
 }
-a:hover{
-    color:#404bbf;
-}   
 
 .nav_logo{
+    letter-spacing: 0.03em;
+    line-height: 2.4;
     text-transform: uppercase;
     font-family:"Raleway",sans-serif;
     font-size: bold;
 }
-h3{
-    font-size: medium;
-}
 .nav_logo_color{
     color: #4D5AE5;
 }
+
 .nav_list li:hover{ 
     color: #404bbf;
    
@@ -56,16 +63,27 @@ h3{
     font-size: medium;
     line-height: normal;
     text-align: center;
-    background-color:#2E2F42;}
+    background-color:#2E2F42;
+}
+
+
 .our_team{
     background-color:#F4F4FD
 }
+.our_tittel{
+    letter-spacing: 0.03em;
+}
+.potfolio_titttel{
+    line-height: 1.5;
+    
+}
 .section_1_tittel>li>h2{
+    font-size: 20px;
     font-weight: 500;
 }
 .tittel{
-    letter-spacing: 10%;
-    line-height: 40%;
+    line-height: 1.11111;
+    letter-spacing:0.03em;
     font-size: 36px;
     text-align: center;
     font-weight: bold;
