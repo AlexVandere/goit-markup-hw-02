@@ -1,90 +1,99 @@
 body{
-    color: #2E2F42;
-    font-Family:roboto,sans-serif;
-    Line-Height:24px;
+    color:2E2F42 ;
+    background-color:white;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+p{
+    color: #434455;
+}
+.tittel {
+    text-align: center;
+}
+.nav {}
+
+.nav-logo {
+    font-family: realRaleway italic, sans-serif;
 }
 
-p{
-    color:#434455;
+.nav-logo_text {
+    color: #4D5AE5;
 }
-a{  
-    font-weight: 500;
-    color:currentColor;
-    letter-spacing: 4%;
-    text-decoration: none;
+
+.nav-list {}
+
+.contact-link:hover,
+.nav-link:hover{
+    color: #4D5AE5;
 }
-a:hover {
-    color: #404bbf;
+
+.nav-contact {}
+
+.order {
+    background-color: #2E2F42;
 }
-h1 {
+
+.order-tittel {
     color: #FFFFFF;
 }
-h3{
-    font-size: 20px;
-    font-weight:500;
-}
-.order_btn{
-    border: none;
-    cursor: pointer;
-    font-size: inherit;
-    font-family: inherit; 
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
+
+.order-btn {
+    color: #FFFFFF;
     background-color:#4D5AE5;
-    color:#FFFFFF;
-
 }
-.order_btn:hover{
-    background-color:#404bbf;
-}
-
-.nav_logo{
-    letter-spacing: 0.03em;
-    line-height: 2.4;
-    text-transform: uppercase;
-    font-family:"Raleway",sans-serif;
-    font-size: bold;
-}
-.nav_logo_color{
-    color: #4D5AE5;
+.order-btn:hover {
+ 
+    background-color:#404BBF;
 }
 
-.nav_list li:hover{ 
-    color: #404bbf;
-   
-}
-.nav_studio:active{
-    color: #4D5AE5;
-    text-decoration: underline;
+.features {}
+
+.features_list {}
+
+.features_item {}
+
+.features_subtittel {}
+
+.features_text {}
+
+.team { 
+    background-color:#F4F4FD;
 }
 
-.order_service{
-    font-size: medium;
-    line-height: normal;
-    text-align: center;
-    background-color:#2E2F42;
+.our-tittel {}
+
+.our-list {}
+
+.our-img {}
+
+.our-subtittel {}
+
+.our-text {}
+
+.portfolio {}
+
+.potfolio-titttel {}
+
+.portfolio-list {}
+
+.potfolio-item {}
+
+.potfolio-img {}
+
+.portfolio-subtittel {}
+
+.potfolio-text {}
+
+.footer { 
+    background-color: #2E2F42;
 }
 
+.footer-link {
+    color: #FFFFFF;
+}
 
-.our_team{
-    background-color:#F4F4FD
-}
-.our_tittel{
-    letter-spacing: 0.03em;
-}
-.potfolio_titttel{
-    line-height: 1.5;
-    
-}
-.section_1_tittel>li>h2{
-    font-size: 20px;
-    font-weight: 500;
-}
-.tittel{
-    line-height: 1.11111;
-    letter-spacing:0.03em;
-    font-size: 36px;
-    text-align: center;
-    font-weight: bold;
+.footer-text {
+    color: #F4F4FD;
 }
