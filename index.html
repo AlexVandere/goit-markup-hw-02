@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- Normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -11,23 +13,23 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,701;1,701&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,701;1,701&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header сlass="header">
+    <header class="header">
+      <div class='container'>
+        <div class="header_row">
       <nav class="nav">
         <a href="#" target="_blank" class="nav-logo logo"
           ><span class="logo_text">WEB</span>STUDIO</a
@@ -44,6 +46,7 @@
           </li>
         </ul>
       </nav>
+      
       <address class="contact">
         <a
           href="mailto:info@devstudio.com"
@@ -55,17 +58,20 @@
           >+11 (000) 111-11-11</a
         >
       </address>
+      </div>
+      </div>
     </header>
     <main>
       <section class="order">
-        <h1 class="order-tittel tittel">
-          Effective Solutions for Your Business
-        </h1>
-        <button type="button" class="order-btn link">Order Service</button>
-      </section>
+          <h1 class="order-tittel tittel">
+            Effective Solutions for Your Business
+          </h1>
+          <button type="button" class="order-btn link">Order Service</button>
+        </section>
       <section class="features">
+        <div class="container">
         <!-- скритий tittel -->
-        <h2 class="hiden">subtittel</h2>
+        <h2 class="hidden">subtittel</h2>
         <ul class="features_list">
           <li class="features_item">
             <h3 class="features_subtittel subtittel">Strategy</h3>
@@ -96,11 +102,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="our-team">
         <h2 class="our-tittel tittel">Our Team</h2>
-        <ul class="our-tittel">
-          <li class="our-list">
+        <div class="container">
+        <ul class="our-list">
+          <li class="our-item">
             <img
               class="our-img"
               src="./images/our-team/img-3.png"
@@ -111,7 +119,7 @@
             <h3 class="our-subtittel subtittel">Mark Guerrero</h3>
             <p class="our-text text">Product Designer</p>
           </li>
-          <li class="our-list">
+          <li class="our-item">
             <img
               class="our-img"
               src="./images/our-team/img-2.png"
@@ -121,7 +129,7 @@
             <h3 class="our-subtittel subtittel">Tom Ford</h3>
             <p class="our-text text">Frontend Developer</p>
           </li>
-          <li class="our-list">
+          <li class="our-item">
             <img
               class="our-img"
               src="./images/our-team/img-1.png"
@@ -144,8 +152,10 @@
             <p class="our-text text">UI Designer</p>
           </li>
         </ul>
+        </div>
       </section>
       <section class="portfolio">
+        <div class="container">
         <h2 class="potfolio-titttel tittel">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="potfolio-item">
@@ -156,8 +166,10 @@
               height="300"
               alt="banking app"
             />
+            <div class="portfolio-container">
             <h3 class="portfolio-subtittel subtittel">Banking App</h3>
             <p class="potfolio-text text">App</p>
+            </div>
           </li>
           <li class="potfolio-item">
             <img
@@ -167,8 +179,10 @@
               height="300"
               alt="Cashless Payment"
             />
+            <div class="portfolio-container">
             <h3 class="portfolio-subtittel subtittel">Cashless Payment</h3>
             <p class="potfolio-text text">Marketing</p>
+            </div>
           </li>
           <li class="potfolio-item">
             <img
@@ -178,8 +192,10 @@
               height="300"
               alt="Meditation App"
             />
+            <div class="portfolio-container">
             <h3 class="portfolio-subtittel subtittel">Meditation App</h3>
             <p class="potfolio-text text">App</p>
+            </div>
           </li>
           <li class="potfolio-item">
             <img
@@ -189,8 +205,10 @@
               height="300"
               alt="Taxi Service"
             />
+            <div class="portfolio-container">
             <h3 class="portfolio-subtittel subtittel">Taxi Service</h3>
             <p class="potfolio-text text">Marketing</p>
+            </div>
           </li>
           <li class="potfolio-item">
             <img
@@ -200,24 +218,32 @@
               height="300"
               alt="Screen Illustrations"
             />
+            <div class="portfolio-container">
             <h3 class="portfolio-subtittel subtittel">Screen Illustrations</h3>
             <p class="potfolio-text text">Design</p>
+            </div>
           </li>
-          <li class="potfolio-item">
-            <img
-              class="potfolio-img"
-              src="./images/our-portfolio/img-6.jpg"
-              width="360"
-              height="300"
-              alt="Online Courses"
-            />
-            <h3 class="portfolio-subtittel subtittel">Online Courses</h3>
-            <p class="potfolio-text">Marketing</p>
+           <div class="potfolio-item">
+              <img
+                class="potfolio-img"
+                src="./images/our-portfolio/img-6.jpg"
+                width="360"
+                height="300"
+                alt="Online Courses"
+              />
+              <div class="portfolio-container">
+              <h3 class="portfolio-subtittel subtittel">Online Courses</h3>
+              <p class="potfolio-text">Marketing</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
+      <div class="container">
+        <div class="footer_row">
+          <div class="footer_container">
       <a href="#" target="_blank" class="footer-link logo"
         ><span class="logo_text">WEB</span>STUDIO</a
       >
@@ -225,6 +251,9 @@
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+      </div>
+      </div>
+      </div>
     </footer>
   </body>
 </html>
