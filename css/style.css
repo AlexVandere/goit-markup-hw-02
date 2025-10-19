@@ -1,24 +1,65 @@
-body{
-    color:2E2F42 ;
+body{   
+    Size: 16px; 
+    font-family: "Roboto", sans-serif;
+    color:#2E2F42 ;
     background-color:white;
 }
+/*#region reset */
 a{
+    font-style: normal;
     text-decoration:none;
     color:inherit;
 }
-p{
+button{
+    cursor: pointer;
+
+}
+ul,ol{
+    list-style: none;
+}
+/*#endregion reset */
+/*#region typography */
+/* a & button */
+.link{
+    letter-spacing: 0.04em;
+}
+.text{ 
+    line-height: 1.5;
     color: #434455;
 }
-.tittel {
+/* h3 */
+.subtittel{
+    letter-spacing: 0.02em;
     text-align: center;
+    line-height: 1.2;
+}
+.tittel {
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+/*#endregion typography */
+/*#region header */
+.header {
+ 
+}
+.nav_logo{
+    
 }
 .nav {}
 
-.nav-logo {
-    font-family: realRaleway italic, sans-serif;
+.logo {
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--navy-blue);
+    font-family: "Raleway", sans-serif;
 }
 
-.nav-logo_text {
+.logo_text {
+
     color: #4D5AE5;
 }
 
@@ -31,24 +72,51 @@ p{
 
 .nav-contact {}
 
+.contact{
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+}
+.devstudio{
+    letter-spacing: -0.05em;
+}
+/*#endregion header */
+
+/*#region order */
 .order {
+    text-align: center;
     background-color: #2E2F42;
 }
 
 .order-tittel {
+    font-size: 56px;   
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
     color: #FFFFFF;
 }
 
 .order-btn {
+    line-height: 1.5;
     color: #FFFFFF;
     background-color:#4D5AE5;
 }
 .order-btn:hover {
- 
     background-color:#404BBF;
 }
-
+/*#endregion order */
+/*#region features */
 .features {}
+/* для seo скритий tittel*/
+.hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 .features_list {}
 
@@ -56,9 +124,12 @@ p{
 
 .features_subtittel {}
 
-.features_text {}
-
-.team { 
+.features_text {
+    letter-spacing: 0.02em;
+}
+/*#endregion features */
+/*#region our-team */
+.our-team { 
     background-color:#F4F4FD;
 }
 
@@ -70,11 +141,17 @@ p{
 
 .our-subtittel {}
 
-.our-text {}
-
+.our-text {/* line-height: 24px; */
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+/*#endregion our-team */
+/*#region portfolio */
 .portfolio {}
 
-.potfolio-titttel {}
+.potfolio-titttel {
+ line-height: 1.5555;
+}
 
 .portfolio-list {}
 
@@ -85,7 +162,8 @@ p{
 .portfolio-subtittel {}
 
 .potfolio-text {}
-
+/*#endregion portfolio */
+/*#region footer */
 .footer { 
     background-color: #2E2F42;
 }
@@ -97,3 +175,4 @@ p{
 .footer-text {
     color: #F4F4FD;
 }
+/*#endregion footer */
