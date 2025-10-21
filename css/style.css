@@ -1,79 +1,44 @@
 
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 /*#region reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video,button {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+a {
+    text-decoration: none;
+    color: currentColor;
 }
-img{
-    display: block;
-    
+
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-.wrap{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-a{
+
+address {
     font-style: normal;
-    text-decoration:none;
-    color:inherit;
 }
-body{   
-    font-family: "Roboto", sans-serif;
-    color:#2E2F42 ;
-    background-color:white;
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
-button{
+
+button {
+    border:none;
     cursor: pointer;
-
-}
-
-ul,ol{
-    list-style: none;
 }
 /*#endregion reset */
 /*#region typography */
@@ -82,25 +47,30 @@ ul,ol{
     letter-spacing: 0.04em;
 }
 .container{
-    width: 1200px;
+    padding: 0 15px;
+    width: 1128px;
     margin: 0 auto;
 }
 .section{
     padding: 120px 0px;
 }
+.section:nth-child(4){
+    padding-bottom: 0;
+}
 .text{ 
-    margin-top: 8px;
-     letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
     line-height: 1.5;
     color: #434455;
 }
 /* h3 */
 .subtittel{
+    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
     line-height: 1.2;
 }
+/*h2*/
 .tittel {
     font-weight: 700;
     font-size: 36px;
@@ -111,13 +81,13 @@ ul,ol{
 /*#endregion typography */
 /*#region header */
 .header {
+    padding: 24px 0px;
     border-bottom: 1px solid rgba(64, 63, 63, 0.1   );
 }
 .header_row{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0px;
 }
 
 .nav_logo{
@@ -177,8 +147,8 @@ ul,ol{
 .nav-contact {}
 
 .contact{
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 .devstudio{
     letter-spacing: -0.05em;
@@ -191,14 +161,12 @@ ul,ol{
     flex-direction: column;
     justify-content: center;
     align-items: center;   
-    gap:50px; 
-    width: 100%;
-    text-align: center;
+    gap:48px; 
     background-color: #2E2F42;
+    padding: 186px;
 }
 
 .order-tittel {
-    width: 496px;
     font-size: 56px;   
     line-height: 1.07143;
     letter-spacing: 0.02em;
@@ -208,9 +176,7 @@ ul,ol{
 .order-btn {    
     border-radius: 4px;
     padding-block: 16px;
-    padding-inline: 32px;
-    width: 169px;
-    height: 57px;       
+    padding-inline: 32px;     
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     line-height: 1.5;
     color: #FFFFFF;
@@ -222,7 +188,7 @@ ul,ol{
 /*#endregion order */
 /*#region features */
 .features {
-    padding: 200px 0px;
+
 }
 /* для seo скритий tittel*/
 .hidden{
@@ -238,7 +204,7 @@ ul,ol{
 
 .features_list {
     display: flex;
-    gap:30px    
+    gap:24px    
 }
 
 .features_item {
@@ -246,7 +212,7 @@ ul,ol{
 }
 
 .features_subtittel {
-    margin-bottom: 10px;
+    
 }
 
 .features_text {
@@ -261,9 +227,7 @@ ul,ol{
     justify-content: center; 
     background-color:#F4F4FD;
 }
-.container{
-   
-}
+
 .our-tittel {
     padding-bottom: 50px;
 }
@@ -273,17 +237,16 @@ ul,ol{
     gap:20px;   
 }
 
-
 .our-item{
-flex-direction: column;
-display: flex;
-justify-content:end;
-align-items: center;
-border-radius: 0 0 4px 4px;
-padding-block: 0px 32px;
-padding-inline: 0px;
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-background:white;
+    flex-direction: column;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    border-radius: 0 0 4px 4px;
+    padding-block: 0px 32px;
+    padding-inline: 0px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    background:white;
 }
 
 .our-img {}
@@ -302,37 +265,38 @@ background:white;
 }
 /*#endregion our-team */
 /*#region portfolio */
-*{
-    box-sizing: border-box;
-}
+
 .portfolio {
  padding-top: 120px;
 }
 
 .potfolio-titttel {
- line-height: 1.5555;
+    margin-bottom: 75px;
+    line-height: 1.5555;
 }
 
 .portfolio-list {
     display: flex;
-    gap:20px;  
-    justify-content: center;
-
+    gap:24px;  
+    margin-bottom: 48px;
+}
+.portfolio-list:last-child{
+    margin-bottom: 0;
 }
 
 .potfolio-item {
-    margin-top: 50px;
+
 }
 
 .portfolio-container{
     border-bottom: 1px solid rgb(200, 200, 200) ;
     border-left: 1px solid rgb(200, 200, 200) ;
     border-right: 1px solid rgb(200, 200, 200) ;
-    padding-block: 32px;
+    padding-block: 31px;
     padding-inline: 16px;
 }
 
-.potfolio-img {}
+.potfolio-img{}
 
 .portfolio-subtittel {
     margin-bottom: 8px;
