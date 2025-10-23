@@ -40,6 +40,15 @@ button {
     border:none;
     cursor: pointer;
 }
+main{
+    flex-grow: 1;
+}
+.order,
+.features,
+.our-team,
+.portfolio{
+    padding: 120px 0;
+}
 /*#endregion reset */
 /*#region typography */
 /* a & button */
@@ -48,7 +57,7 @@ button {
 }
 .container{
     padding: 0 15px;
-    width: 1128px;
+    width: 1158px;
     margin: 0 auto;
 }
 .section{
@@ -64,7 +73,6 @@ button {
 }
 /* h3 */
 .subtittel{
-    margin-bottom: 8px;
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 0.02em;
@@ -78,10 +86,20 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
 }
+/* обгортка*/
+.wrap{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 /*#endregion typography */
 /*#region header */
 .header {
-    padding: 24px 0px;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    top:0;
+    z-index: 1000;
     border-bottom: 1px solid rgba(64, 63, 63, 0.1   );
 }
 .header_row{
@@ -112,12 +130,14 @@ button {
 }
 
 .nav-list {
+    display: block;
     display: flex;
     gap: 40px;
     margin-left: 80px;
 }
-.nav-item{
-
+.nav-link{
+    display: block;
+    padding: 13px 0px;
 }
 .line{
     position: relative;
@@ -130,7 +150,6 @@ button {
     bottom:-10px;
     left: 0%;
     position:absolute;
-
 }
 .contact-link{
     margin-right: 20px;
@@ -172,7 +191,9 @@ button {
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
-
+.order-text{
+    display: block;
+}
 .order-btn {    
     border-radius: 4px;
     padding-block: 16px;
@@ -181,9 +202,12 @@ button {
     line-height: 1.5;
     color: #FFFFFF;
     background-color:#4D5AE5;
+ 
+    transition: box-shadow 150ms ease-in-out 100ms,background-color 350ms linear 110ms;
 }
 .order-btn:hover {
-    background-color:#404BBF;
+    box-shadow: 1px 0px 20px black ;
+    background-color:#aaaaae;
 }
 /*#endregion order */
 /*#region features */
@@ -203,16 +227,17 @@ button {
 }
 
 .features_list {
+    flex-wrap: wrap;
     display: flex;
-    gap:24px    
+    gap: 20px;
 }
 
 .features_item {
-    
+    width: calc((100% - 3 * 20px ) / 4);
 }
 
 .features_subtittel {
-    
+    margin-bottom: 8px;
 }
 
 .features_text {
@@ -229,34 +254,45 @@ button {
 }
 
 .our-tittel {
-    padding-bottom: 50px;
+    padding-bottom: 72px;
 }
 
 .our-list {
     display: flex;
-    gap:20px;   
+    gap:24px;
 }
 
+
 .our-item{
-    flex-direction: column;
-    display: flex;
-    justify-content:end;
-    align-items: center;
+    transition:transform 150ms ease-in 200ms, box-shadow;
+    width: calc((100% - 3 * 24px) / 4);
     border-radius: 0 0 4px 4px;
     padding-block: 0px 32px;
     padding-inline: 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     background:white;
+  
+}
+.our-item:hover {
+    box-shadow: 0px 0px 10px 1px rgba(20, 10, 20,20);
+    transform:skew(10deg)
 }
 
-.our-img {}
+
+.our-img {
+    padding-bottom: 32px;
+}
 
 .our-subtittel {
-    
+    margin-bottom: 8px;
  
 }
 .our_box{
- padding-top: 32px;
+    flex-direction: column;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+ 
 }
 
 .our-text {
@@ -270,22 +306,23 @@ button {
  padding-top: 120px;
 }
 
-.potfolio-titttel {
+.portfolio-tittel {
     margin-bottom: 75px;
     line-height: 1.5555;
 }
 
 .portfolio-list {
+    flex-wrap: wrap;
     display: flex;
-    gap:24px;  
-    margin-bottom: 48px;
+    gap: 48px 20px;
+
 }
 .portfolio-list:last-child{
     margin-bottom: 0;
 }
 
-.potfolio-item {
-
+.portfolio-item {
+    width: calc((100% - 2 * 20px) / 3);
 }
 
 .portfolio-container{
@@ -296,7 +333,9 @@ button {
     padding-inline: 16px;
 }
 
-.potfolio-img{}
+.portfolio-img{
+    width: 100%;
+}
 
 .portfolio-subtittel {
     margin-bottom: 8px;
@@ -306,6 +345,7 @@ button {
 /*#endregion portfolio */
 /*#region footer */
 .footer { 
+    padding: 100px 0;
     background-color: #2E2F42;
 }
 
@@ -321,7 +361,6 @@ button {
 .footer-link {
     color: #FFFFFF;
 }
-
 .footer-text {
     padding-top: 8px;
     color: white;
